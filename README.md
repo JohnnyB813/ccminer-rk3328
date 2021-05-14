@@ -2,16 +2,19 @@
 
 Based on https://github.com/monkins1010/ccminer/tree/ARM
 
+
+
+```
 sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y
 sudo apt-get install clang lld -y
-git clone --single-branch -b verus2.2gpu https://github.com/DevTechGames/ccminer-rk3328.git
+git clone https://github.com/DevTechGames/ccminer-rk3328.git
 cd ccminer-rk3328
 chmod +x build.sh
 chmod +x configure.sh
 chmod +x autogen.sh
 ./build.sh
-
+```
 
 Compile on Linux
 ----------------
