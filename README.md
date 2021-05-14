@@ -2,6 +2,15 @@
 
 Based on https://github.com/monkins1010/ccminer/tree/ARM
 
+I recommend using the latest release of Armbian for the Rock64 (https://www.armbian.com/rock64/#kernels-archive-all)
+
+Overclocking:
+With older releases of Armbian, Overclocking is done with the below commands
+```
+sed -i "s/MAX_SPEED=.*/MAX_SPEED=1510000/" /etc/default/cpufrequtils
+service cpufrequtils restart
+```
+But on the latest version you can overclock with `armbian-config`.
 
 
 ```
