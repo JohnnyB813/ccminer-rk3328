@@ -1,0 +1,250 @@
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 101, Column: 9 }
+Function:        crc32
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 101, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 101, Column: 26 }
+Function:        crc32
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 101, Column: 26 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 101, Column: 9 }
+Function:        crc32
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 101, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 101, Column: 26 }
+Function:        crc32
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 101, Column: 26 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 116, Column: 9 }
+Function:        crc32_u32t
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 116, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 116, Column: 26 }
+Function:        crc32_u32t
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 116, Column: 26 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 116, Column: 9 }
+Function:        crc32_u32t
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 116, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 116, Column: 26 }
+Function:        crc32_u32t
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 116, Column: 26 }
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: crc32.c, Line: 100, Column: 2 }
+Function:        crc32
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            NonAffineAccess
+DebugLoc:        { File: crc32.c, Line: 101, Column: 9 }
+Function:        crc32
+Args:
+  - String:          'The array subscript of "crc32_tab" is not affine'
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: crc32.c, Line: 101, Column: 47 }
+Function:        crc32
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: crc32.c, Line: 98, Column: 12 }
+Function:        crc32
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            NonAffineAccess
+DebugLoc:        { File: crc32.c, Line: 101, Column: 9 }
+Function:        crc32
+Args:
+  - String:          'The array subscript of "crc32_tab" is not affine'
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: crc32.c, Line: 101, Column: 47 }
+Function:        crc32
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: crc32.c, Line: 112, Column: 6 }
+Function:        crc32_u32t
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            NonAffineAccess
+DebugLoc:        { File: crc32.c, Line: 116, Column: 9 }
+Function:        crc32_u32t
+Args:
+  - String:          'The array subscript of "crc32_tab" is not affine'
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: crc32.c, Line: 118, Column: 13 }
+Function:        crc32_u32t
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: crc32.c, Line: 115, Column: 2 }
+Function:        crc32_u32t
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            NonAffineAccess
+DebugLoc:        { File: crc32.c, Line: 116, Column: 9 }
+Function:        crc32_u32t
+Args:
+  - String:          'The array subscript of "crc32_tab" is not affine'
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: crc32.c, Line: 116, Column: 47 }
+Function:        crc32_u32t
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: crc32.c, Line: 100, Column: 2 }
+Function:        crc32
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: crc32.c, Line: 100, Column: 2 }
+Function:        crc32
+Args:
+  - String:          loop not vectorized
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 101, Column: 9 }
+Function:        crc32
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 101, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 101, Column: 26 }
+Function:        crc32
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 101, Column: 26 }
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: crc32.c, Line: 115, Column: 2 }
+Function:        crc32_u32t
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: crc32.c, Line: 115, Column: 2 }
+Function:        crc32_u32t
+Args:
+  - String:          loop not vectorized
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 116, Column: 9 }
+Function:        crc32_u32t
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 116, Column: 9 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: crc32.c, Line: 116, Column: 26 }
+Function:        crc32_u32t
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: crc32.c, Line: 116, Column: 26 }
+...

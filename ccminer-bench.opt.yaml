@@ -1,0 +1,564 @@
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 32, Column: 2 }
+Function:        bench_init
+Args:
+  - Callee:          applog
+    DebugLoc:        { File: './miner.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_init
+    DebugLoc:        { File: bench.cpp, Line: 30, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 33, Column: 2 }
+Function:        bench_init
+Args:
+  - Callee:          pthread_barrier_init
+    DebugLoc:        { File: '/usr/include/pthread.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_init
+    DebugLoc:        { File: bench.cpp, Line: 30, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 34, Column: 2 }
+Function:        bench_init
+Args:
+  - Callee:          pthread_barrier_init
+    DebugLoc:        { File: '/usr/include/pthread.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_init
+    DebugLoc:        { File: bench.cpp, Line: 30, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 41, Column: 2 }
+Function:        bench_free
+Args:
+  - Callee:          pthread_barrier_destroy
+    DebugLoc:        { File: '/usr/include/pthread.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_free
+    DebugLoc:        { File: bench.cpp, Line: 40, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 42, Column: 2 }
+Function:        bench_free
+Args:
+  - Callee:          pthread_barrier_destroy
+    DebugLoc:        { File: '/usr/include/pthread.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_free
+    DebugLoc:        { File: bench.cpp, Line: 40, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 101, Column: 3 }
+Function:        bench_algo_switch_next
+Args:
+  - Callee:          sleep
+    DebugLoc:        { File: '/usr/include/unistd.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_algo_switch_next
+    DebugLoc:        { File: bench.cpp, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 107, Column: 3 }
+Function:        bench_algo_switch_next
+Args:
+  - Callee:          pthread_barrier_wait
+    DebugLoc:        { File: '/usr/include/pthread.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_algo_switch_next
+    DebugLoc:        { File: bench.cpp, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 111, Column: 20 }
+Function:        bench_algo_switch_next
+Args:
+  - Callee:          stats_get_speed
+    DebugLoc:        { File: './miner.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_algo_switch_next
+    DebugLoc:        { File: bench.cpp, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 112, Column: 2 }
+Function:        bench_algo_switch_next
+Args:
+  - Callee:          format_hashrate
+    DebugLoc:        { File: './miner.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_algo_switch_next
+    DebugLoc:        { File: bench.cpp, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 113, Column: 2 }
+Function:        bench_algo_switch_next
+Args:
+  - Callee:          gpulog
+    DebugLoc:        { File: './miner.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_algo_switch_next
+    DebugLoc:        { File: bench.cpp, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 129, Column: 3 }
+Function:        bench_algo_switch_next
+Args:
+  - Callee:          pthread_barrier_wait
+    DebugLoc:        { File: '/usr/include/pthread.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_algo_switch_next
+    DebugLoc:        { File: bench.cpp, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 136, Column: 2 }
+Function:        bench_algo_switch_next
+Args:
+  - Callee:          pthread_mutex_lock
+    DebugLoc:        { File: '/usr/include/pthread.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_algo_switch_next
+    DebugLoc:        { File: bench.cpp, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 137, Column: 2 }
+Function:        bench_algo_switch_next
+Args:
+  - Callee:          stats_purge_all
+    DebugLoc:        { File: './miner.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_algo_switch_next
+    DebugLoc:        { File: bench.cpp, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 142, Column: 2 }
+Function:        bench_algo_switch_next
+Args:
+  - Callee:          pthread_mutex_unlock
+    DebugLoc:        { File: '/usr/include/pthread.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_algo_switch_next
+    DebugLoc:        { File: bench.cpp, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 147, Column: 3 }
+Function:        bench_algo_switch_next
+Args:
+  - Callee:          applog
+    DebugLoc:        { File: './miner.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_algo_switch_next
+    DebugLoc:        { File: bench.cpp, Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: bench.cpp, Line: 106, Column: 6 }
+Function:        bench_algo_switch_next
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: bench.cpp, Line: 101, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: bench.cpp, Line: 111, Column: 44 }
+Function:        bench_algo_switch_next
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: bench.cpp, Line: 107, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: bench.cpp, Line: 111, Column: 44 }
+Function:        bench_algo_switch_next
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: bench.cpp, Line: 101, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: bench.cpp, Line: 121, Column: 36 }
+Function:        bench_algo_switch_next
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: bench.cpp, Line: 100, Column: 6 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: bench.cpp, Line: 113, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: bench.cpp, Line: 128, Column: 6 }
+Function:        bench_algo_switch_next
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: bench.cpp, Line: 106, Column: 6 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: bench.cpp, Line: 113, Column: 2 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 162, Column: 3 }
+Function:        bench_display_results
+Args:
+  - Callee:          applog
+    DebugLoc:        { File: './miner.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_display_results
+    DebugLoc:        { File: bench.cpp, Line: 158, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: bench.cpp, Line: 166, Column: 4 }
+Function:        bench_display_results
+Args:
+  - Callee:          applog
+    DebugLoc:        { File: './miner.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          bench_display_results
+    DebugLoc:        { File: bench.cpp, Line: 158, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: bench.cpp, Line: 164, Column: 18 }
+Function:        bench_display_results
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: bench.cpp, Line: 164, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: bench.cpp, Line: 162, Column: 67 }
+Function:        bench_display_results
+Args:
+  - String:          'sinking '
+  - Inst:            sext
+    DebugLoc:        { File: bench.cpp, Line: 162, Column: 67 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: bench.cpp, Line: 161, Column: 16 }
+Function:        bench_display_results
+Args:
+  - String:          'sinking '
+  - Inst:            sext
+    DebugLoc:        { File: bench.cpp, Line: 161, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: bench.cpp, Line: 161, Column: 16 }
+Function:        bench_display_results
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: bench.cpp, Line: 161, Column: 16 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 20 }
+Function:        bench_display_results
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 20 }
+Function:        bench_display_results
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: bench.cpp, Line: 159, Column: 20 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: bench.cpp, Line: 166, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 20 }
+Function:        bench_display_results
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: bench.cpp, Line: 159, Column: 20 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: bench.cpp, Line: 162, Column: 3 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 18 }
+Function:        bench_display_results
+Args:
+  - String:          'sinking '
+  - Inst:            sext
+    DebugLoc:        { File: bench.cpp, Line: 159, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: bench.cpp, Line: 162, Column: 67 }
+Function:        bench_display_results
+Args:
+  - String:          'sinking '
+  - Inst:            sext
+    DebugLoc:        { File: bench.cpp, Line: 162, Column: 67 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: bench.cpp, Line: 161, Column: 16 }
+Function:        bench_display_results
+Args:
+  - String:          'sinking '
+  - Inst:            sext
+    DebugLoc:        { File: bench.cpp, Line: 161, Column: 16 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 20 }
+Function:        bench_display_results
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 2 }
+Function:        bench_display_results
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            LoopBound
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 2 }
+Function:        bench_display_results
+Args:
+  - String:          Failed to derive an affine function from the loop bounds.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: bench.cpp, Line: 168, Column: 3 }
+Function:        bench_display_results
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: bench.cpp, Line: 163, Column: 3 }
+Function:        bench_display_results
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            Unprofitable
+DebugLoc:        { File: bench.cpp, Line: 164, Column: 18 }
+Function:        bench_display_results
+Args:
+  - String:          No profitable polyhedral optimization found
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: bench.cpp, Line: 168, Column: 3 }
+Function:        bench_display_results
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 2 }
+Function:        bench_display_results
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            LoopBound
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 2 }
+Function:        bench_display_results
+Args:
+  - String:          Failed to derive an affine function from the loop bounds.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: bench.cpp, Line: 168, Column: 3 }
+Function:        bench_display_results
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: bench.cpp, Line: 82, Column: 6 }
+Function:        bench_algo_switch_next
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NoCFGForSelect
+DebugLoc:        { File: bench.cpp, Line: 168, Column: 3 }
+Function:        bench_display_results
+Args:
+  - String:          'loop not vectorized: '
+  - String:          control flow cannot be substituted for a select
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeLibcall
+DebugLoc:        { File: bench.cpp, Line: 166, Column: 4 }
+Function:        bench_display_results
+Args:
+  - String:          'loop not vectorized: '
+  - String:          call instruction cannot be vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: bench.cpp, Line: 163, Column: 3 }
+Function:        bench_display_results
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: bench.cpp, Line: 163, Column: 3 }
+Function:        bench_display_results
+Args:
+  - String:          loop not vectorized
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 18 }
+Function:        bench_display_results
+Args:
+  - String:          'sinking '
+  - Inst:            sext
+    DebugLoc:        { File: bench.cpp, Line: 159, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: bench.cpp, Line: 162, Column: 67 }
+Function:        bench_display_results
+Args:
+  - String:          'sinking '
+  - Inst:            sext
+    DebugLoc:        { File: bench.cpp, Line: 162, Column: 67 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: bench.cpp, Line: 161, Column: 16 }
+Function:        bench_display_results
+Args:
+  - String:          'sinking '
+  - Inst:            sext
+    DebugLoc:        { File: bench.cpp, Line: 161, Column: 16 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: bench.cpp, Line: 159, Column: 20 }
+Function:        bench_display_results
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...

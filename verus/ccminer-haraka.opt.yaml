@@ -1,0 +1,1579 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 4008, Column: 12 }
+Function:        _mm_load_si128
+Args:
+  - Callee:          vreinterpretq_s64_s32
+  - String:          ' inlined into '
+  - Caller:          _mm_load_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 4007, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_load_si128
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 5005, Column: 12 }
+Function:        _mm_aesenc_si128
+Args:
+  - Callee:          vreinterpretq_u8_s64
+  - String:          ' inlined into '
+  - Caller:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_aesenc_si128
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 5005, Column: 12 }
+Function:        _mm_aesenc_si128
+Args:
+  - Callee:          vreinterpretq_s64_u8
+  - String:          ' inlined into '
+  - Caller:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_aesenc_si128
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 5005, Column: 12 }
+Function:        _mm_aesenc_si128
+Args:
+  - Callee:          vreinterpretq_u8_s64
+  - String:          ' inlined into '
+  - Caller:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_aesenc_si128
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 5005, Column: 12 }
+Function:        _mm_aesenc_si128
+Args:
+  - Callee:          vaesmcq_u8
+  - String:          ' inlined into '
+  - Caller:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_aesenc_si128
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 5005, Column: 12 }
+Function:        _mm_aesenc_si128
+Args:
+  - Callee:          vaeseq_u8
+  - String:          ' inlined into '
+  - Caller:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_aesenc_si128
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _mm_unpacklo_epi32
+Args:
+  - Callee:          vreinterpretq_s32_s64
+  - String:          ' inlined into '
+  - Caller:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_unpacklo_epi32
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _mm_unpacklo_epi32
+Args:
+  - Callee:          vreinterpretq_s64_s32
+  - String:          ' inlined into '
+  - Caller:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_unpacklo_epi32
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _mm_unpacklo_epi32
+Args:
+  - Callee:          vzip1q_s32
+  - String:          ' inlined into '
+  - Caller:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_unpacklo_epi32
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _mm_unpacklo_epi32
+Args:
+  - Callee:          vreinterpretq_s32_s64
+  - String:          ' inlined into '
+  - Caller:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_unpacklo_epi32
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 4437, Column: 12 }
+Function:        _mm_unpackhi_epi32
+Args:
+  - Callee:          vreinterpretq_s32_s64
+  - String:          ' inlined into '
+  - Caller:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_unpackhi_epi32
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 4437, Column: 12 }
+Function:        _mm_unpackhi_epi32
+Args:
+  - Callee:          vreinterpretq_s64_s32
+  - String:          ' inlined into '
+  - Caller:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_unpackhi_epi32
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 4437, Column: 12 }
+Function:        _mm_unpackhi_epi32
+Args:
+  - Callee:          vzip2q_s32
+  - String:          ' inlined into '
+  - Caller:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_unpackhi_epi32
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: './sse2neon.h', Line: 4437, Column: 12 }
+Function:        _mm_unpackhi_epi32
+Args:
+  - Callee:          vreinterpretq_s32_s64
+  - String:          ' inlined into '
+  - Caller:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _mm_unpackhi_epi32
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 43, Column: 10 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_load_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 4007, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 60, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '20'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 60, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '20'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 58, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '18'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 58, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '18'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 58, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '18'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 57, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '17'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 57, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '17'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 57, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '17'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 57, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '17'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 57, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '17'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 57, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '17'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 57, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '17'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 57, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '17'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 55, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '15'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 55, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '15'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 55, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '15'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 55, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '15'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 55, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '15'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 55, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '15'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 55, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '15'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 55, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '15'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 54, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '14'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 54, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '14'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 54, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '14'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 54, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '14'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 54, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '14'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 54, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '14'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 54, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '14'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 54, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '14'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 52, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '12'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 52, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '12'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 52, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '12'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 52, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '12'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 52, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '12'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 52, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '12'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 52, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '12'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 52, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '12'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 51, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '11'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 51, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '11'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 51, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '11'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 51, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '11'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 51, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '11'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 51, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '11'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 51, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '11'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 51, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '11'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 49, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '9'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 49, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '9'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 49, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '9'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 49, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '9'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 49, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '9'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 49, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '9'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 49, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpackhi_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4435, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '9'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 49, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_unpacklo_epi32
+    DebugLoc:        { File: './sse2neon.h', Line: 4315, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '9'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 48, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '8'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 48, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '8'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 48, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '8'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 48, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '8'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 48, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '8'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 48, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '8'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 48, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '8'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 48, Column: 3 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_aesenc_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 5004, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '8'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 46, Column: 10 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_load_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 4007, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '6'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 45, Column: 10 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_load_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 4007, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '5'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'verus/haraka.c', Line: 44, Column: 10 }
+Function:        haraka512_keyed
+Args:
+  - Callee:          _mm_load_si128
+    DebugLoc:        { File: './sse2neon.h', Line: 4007, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.c', Line: 40, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          haraka512_keyed
+  - String:          ':'
+  - Line:            '4'
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/haraka.c', Line: 67, Column: 29 }
+Function:        haraka512_keyed
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/haraka.c', Line: 67, Column: 29 }
+...

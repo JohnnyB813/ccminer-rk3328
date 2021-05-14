@@ -1,0 +1,4163 @@
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - Callee:          haraka256_port
+    DebugLoc:        { File: 'verus/haraka_portable.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          _Z11GenNewCLKeyPhP11__Int64x2_t
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 3 }
+Function:        FixKey
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 3 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 3 }
+Function:        FixKey
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 3 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 81, Column: 2 }
+Function:        FixKey
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '32'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 40 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 42 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 27 }
+Function:        FixKey
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 23 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                   Line: 873, Column: 13 }
+Function:        _ZSt9__fill_a1IPhiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+Args:
+  - String:          'sinking '
+  - Inst:            trunc
+    DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                       Line: 873, Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                   Line: 873, Column: 13 }
+Function:        _ZSt9__fill_a1IPhiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+Args:
+  - String:          'hoisting '
+  - Inst:            trunc
+    DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                       Line: 873, Column: 13 }
+...
+--- !Passed
+Pass:            loop-idiom
+Name:            ProcessLoopStridedStore
+DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                   Line: 873, Column: 11 }
+Function:        _ZSt9__fill_a1IPhiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+Args:
+  - String:          'Transformed loop-strided store into a call to '
+  - NewFunction:     llvm.memset.p0i8.i64
+  - String:          '() function'
+...
+--- !Passed
+Pass:            loop-delete
+Name:            Invariant
+DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                   Line: 872, Column: 7 }
+Function:        _ZSt9__fill_a1IPhiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+Args:
+  - String:          Loop deleted because it is invariant
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                   Line: 905, Column: 7 }
+Function:        _ZSt8__fill_aIPhiEvT_S1_RKT0_
+Args:
+  - Callee:          _ZSt9__fill_a1IPhiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+    DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                       Line: 870, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          _ZSt8__fill_aIPhiEvT_S1_RKT0_
+    DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                       Line: 905, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-20'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '__fill_a<unsigned char *, int>'
+  - String:          ':'
+  - Line:            '1'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                   Line: 935, Column: 7 }
+Function:        _ZSt4fillIPhiEvT_S1_RKT0_
+Args:
+  - Callee:          _ZSt8__fill_aIPhiEvT_S1_RKT0_
+    DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                       Line: 905, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          _ZSt4fillIPhiEvT_S1_RKT0_
+    DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                       Line: 929, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-20'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          'fill<unsigned char *, int>'
+  - String:          ':'
+  - Line:            '7'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 108, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - Callee:          load_constants_port
+    DebugLoc:        { File: 'verus/haraka_portable.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          VerusHashHalf
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 96, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 4 }
+Function:        VerusHashHalf
+Args:
+  - Callee:          haraka512_port
+    DebugLoc:        { File: 'verus/haraka_portable.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          VerusHashHalf
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 96, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 104, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - Callee:          _ZSt4fillIPhiEvT_S1_RKT0_
+    DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                       Line: 929, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          VerusHashHalf
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 96, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          VerusHashHalf
+  - String:          ':'
+  - Line:            '9'
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 129, Column: 10 }
+Function:        VerusHashHalf
+Args:
+  - String:          'sinking '
+  - Inst:            trunc
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 129, Column: 10 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 113, Column: 14 }
+Function:        VerusHashHalf
+Args:
+  - String:          'sinking '
+  - Inst:            trunc
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 113, Column: 14 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 129, Column: 10 }
+Function:        VerusHashHalf
+Args:
+  - String:          'hoisting '
+  - Inst:            trunc
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 129, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 134, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 127, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 134, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 4 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 134, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 134, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 127, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 134, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 4 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 113, Column: 14 }
+Function:        VerusHashHalf
+Args:
+  - String:          'sinking '
+  - Inst:            trunc
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 113, Column: 14 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 17 }
+Function:        Verus2hash
+Args:
+  - Callee:          _Z19verusclhash_port2_2PvPKhmPjS2_
+    DebugLoc:        { File: 'verus/verus_clhash.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 144, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 177, Column: 3 }
+Function:        Verus2hash
+Args:
+  - Callee:          haraka512_keyed
+    DebugLoc:        { File: 'verus/haraka.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 144, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 147, Column: 3 }
+Function:        Verus2hash
+Args:
+  - Callee:          _Z11GenNewCLKeyPhP11__Int64x2_t
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 56, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 144, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '15'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          Verus2hash
+  - String:          ':'
+  - Line:            '5'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+Function:        Verus2hash
+Args:
+  - Callee:          FixKey
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 78, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 144, Column: 0 }
+  - String:          ' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '750'
+  - String:          ', threshold='
+  - Threshold:       '750'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+Function:        Verus2hash
+Args:
+  - Callee:          FixKey
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 78, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 144, Column: 0 }
+  - String:          ' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '750'
+  - String:          ', threshold='
+  - Threshold:       '750'
+  - String:          ')'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 149, Column: 15 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 31 }
+Function:        Verus2hash
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 31 }
+Function:        Verus2hash
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 17 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 228, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          gettimeofday
+    DebugLoc:        { File: '/usr/include/aarch64-linux-gnu/sys/time.h', 
+                       Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 245, Column: 4 }
+Function:        scanhash_verus
+Args:
+  - Callee:          bn_store_hash_target_ratio
+    DebugLoc:        { File: './miner.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 263, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          gettimeofday
+    DebugLoc:        { File: '/usr/include/aarch64-linux-gnu/sys/time.h', 
+                       Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 264, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          timeval_subtract
+    DebugLoc:        { File: './miner.h', Line: 0, Column: 0 }
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 224, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          VerusHashHalf
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 96, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '120'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scanhash_verus
+  - String:          ':'
+  - Line:            '39'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 225, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          _Z11GenNewCLKeyPhP11__Int64x2_t
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 56, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '15'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scanhash_verus
+  - String:          ':'
+  - Line:            '40'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 235, Column: 3 }
+Function:        scanhash_verus
+Args:
+  - Callee:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 144, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '215'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scanhash_verus
+  - String:          ':'
+  - Line:            '50'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          FixKey
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 78, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 0 }
+  - String:          ' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '590'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          FixKey
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 78, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 0 }
+  - String:          ' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '590'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 148, Column: 3 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 148, Column: 3 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 63 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 63 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 40 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 175, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            trunc
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 175, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 169, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 169, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 168, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 168, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 22 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 22 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 157, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 157, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 16 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 18 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 30 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 30 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 30 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 235, Column: 102 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 235, Column: 102 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 235, Column: 111 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 235, Column: 111 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 235, Column: 122 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 235, Column: 122 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 148, Column: 3 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 148, Column: 3 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 152, Column: 16 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 152, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 16 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 16 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 157, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 157, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 157, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 157, Column: 2 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 7 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 63 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 63 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 259, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 259, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 259, Column: 12 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 111, Column: 20 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 111, Column: 20 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 134, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 4 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 134, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 231, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 228, Column: 2 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 30 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i1
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 30 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 228, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 240, Column: 22 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 247, Column: 23 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 245, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i1
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 230, Column: 13 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 177, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 259, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '%struct.work_restart*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 271, Column: 15 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 264, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 134, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 231, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 228, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 228, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 240, Column: 22 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 247, Column: 23 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 245, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i1
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 230, Column: 13 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 177, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 259, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '%struct.work_restart*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 178, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 271, Column: 15 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 264, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 40 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 175, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            trunc
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 175, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 169, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 169, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 168, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 168, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 22 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 22 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 18 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 18 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 259, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            FuncCall
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          This function call cannot be handled. Try to inline it.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 67, Column: 8 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 0, Column: 0 }
+Function:        VerusHashHalf
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            LoopBound
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 111, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          Failed to derive an affine function from the loop bounds.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: '/usr/local/bin/../lib/gcc/aarch64-unknown-linux-gnu/10.1.0/../../../../include/c++/10.1.0/bits/stl_algobase.h', 
+                   Line: 873, Column: 11 }
+Function:        VerusHashHalf
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 0, Column: 0 }
+Function:        VerusHashHalf
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            LoopBound
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 111, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          Failed to derive an affine function from the loop bounds.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 128, Column: 11 }
+Function:        VerusHashHalf
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 0, Column: 0 }
+Function:        VerusHashHalf
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            Unprofitable
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 113, Column: 14 }
+Function:        VerusHashHalf
+Args:
+  - String:          No profitable polyhedral optimization found
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 128, Column: 11 }
+Function:        VerusHashHalf
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            FuncCall
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+Function:        Verus2hash
+Args:
+  - String:          This function call cannot be handled. Try to inline it.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 67, Column: 8 }
+Function:        Verus2hash
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 0, Column: 0 }
+Function:        Verus2hash
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            NonAffBranch
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 146, Column: 7 }
+Function:        Verus2hash
+Args:
+  - String:          Unspecified error.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 151, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            FuncCall
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+Function:        scanhash_verus
+Args:
+  - String:          This function call cannot be handled. Try to inline it.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 67, Column: 8 }
+Function:        scanhash_verus
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 0, Column: 0 }
+Function:        scanhash_verus
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            NonAffBranch
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 146, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          Unspecified error.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 30 }
+Function:        scanhash_verus
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 0, Column: 0 }
+Function:        scanhash_verus
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            ReportLoopHasMultipleExits
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 232, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          Loop cannot be handled because it has multiple exits.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 259, Column: 33 }
+Function:        scanhash_verus
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            RejectionErrors
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          The following errors keep this region from being a Scop.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            FuncCall
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+Function:        scanhash_verus
+Args:
+  - String:          This function call cannot be handled. Try to inline it.
+...
+--- !Missed
+Pass:            polly-detect
+Name:            InvalidScopEnd
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 67, Column: 8 }
+Function:        scanhash_verus
+Args:
+  - String:          Invalid Scop candidate ends here.
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 83, Column: 25 }
+Function:        FixKey
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NoCFGForSelect
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 124, Column: 3 }
+Function:        VerusHashHalf
+Args:
+  - String:          'loop not vectorized: '
+  - String:          control flow cannot be substituted for a select
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 111, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 111, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 111, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 0, Column: 0 }
+Function:        VerusHashHalf
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        VerusHashHalf
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        VerusHashHalf
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 113, Column: 14 }
+Function:        VerusHashHalf
+Args:
+  - String:          'sinking '
+  - Inst:            trunc
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 113, Column: 14 }
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 22 }
+Function:        Verus2hash
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        Verus2hash
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 115, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 115, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 115, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          loop not vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          loop not vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        scanhash_verus
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        scanhash_verus
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        scanhash_verus
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        scanhash_verus
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 40 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 175, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            trunc
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 175, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 169, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 169, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 168, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 168, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 22 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 22 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 18 }
+Function:        scanhash_verus
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 18 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 153, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 166, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 167, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 253, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 259, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
