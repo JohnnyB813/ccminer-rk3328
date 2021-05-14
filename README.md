@@ -13,6 +13,7 @@ service cpufrequtils restart
 But on the latest version you can overclock with `armbian-config`.
 
 
+Git and Build Process:
 ```
 sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y
